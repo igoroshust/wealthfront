@@ -153,15 +153,16 @@ nav ul li a:hover {
     .laptop {
         text-align:center; /* выравнивание картинки посередине */
         padding-bottom: 20px; /* расстояние от картинки до заголовка */
+        padding-left: 0;
     }
 
     .right-part {
         text-align: center; /* выравнивание заголовка и текста по центру */
-        padding-top: 0px;
+        padding-top: 0;
+        padding-left: 0;
         width: 100%;
 
     }
-
 }
 
 
@@ -174,3 +175,29 @@ nav ul li a:hover {
     }
 }
 */
+
+@media (max-width: 500px) {
+
+    .laptop img{
+        width: 300px;
+        height: 300px;
+        padding-left: 0;
+        /* padding-bottom: 10px; */
+    }
+
+    .caption {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .section-container {
+        padding-top: 0px;
+    }
+
+    .menu-container {
+        padding-top: 20px;
+    }
+}
