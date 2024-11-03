@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="fixed-container"> <!-- Делаем ограничения -->
+        <div class="menu-container"> <!-- Содержится логотип и меню. К нему применяем flexbox -->
+            <div class="logo"> <!-- Лог для логотипа -->
+                <!-- Нужно сделать картинку блочным элементом, чтобы без проблем с ней работать дальше-->
+                <img src="img/logo.png" alt="Логотип" title="Логотип Wealthfront">
+            </div>
+                <nav class="header-menu"> <!-- Блок для меню -->
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#">Главная</a></li>
+                        <li class="menu-item"><a href="#">Об авторе</a></li>
+                        <li class="menu-item"><a href="#">Работы</a></li>
+                        <li class="menu-item"><a href="#">Процессы</a></li>
+                        <li class="menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            <!-- Бургер-меню -->
+            <a href="" class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="main-section">
+        <div class="fixed-container"> <!-- Фиксирование содержимого в конкретной области -->
+            <div class="section-container">
+                <div class="laptop"> <!-- Блок для картинки -->
+                    <img src="img/rectangle.png" alt="Ноутбук">
+                </div>
+                <div class="right-part"> <!-- Блок для контента справа от картинки -->
+                    <h1 class="caption">Дизайн и вёрстка</h1>
+                    <p class="description">Our Cash account, offered with Green Dot Bank, lets you automate your savings, so you can pay bills, withdraw from 19,000+ ATMs, and invest your extra cash in seconds to keep building your future.</p>
+                    <button class="button">НАПИСАТЬ МНЕ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+
+</footer>
+
+</body>
+</html>

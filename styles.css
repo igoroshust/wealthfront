@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./fonts/Roboto-Regular.ttf');
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto-Regular', Helvetica, Arial, sans-serif;
+    text-decoration: none; /* убираем подчёркивание у ссылок */
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+.header, .main-section {
+    background: #EEEFF1;
+    max-width: 1920px;
+    padding: 0 20px; /* делаем отступы по краям для мобильной версии */
+    margin: 0 auto; /* выравнивание */
+}
+
+.fixed-container {
+    padding: 0 20px; /* отступы по краям для мобильной версии */
+    margin: 0 auto; /* выравнивание */
+    max-width: 1240px;
+}
+
+.menu-container {
+    display: flex; /* горизонтальное расположение меню */
+    padding-top: 67px;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 47px;
+}
+
+.menu {
+    display: flex;
+}
+
+.header-menu {
+    padding-top: 6px;
+}
+
+nav ul li {
+    text-transform: uppercase; /* Пункты меню капсом */
+    font-size: 12px;
+}
+
+nav ul li a {
+    margin-right: 47px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a:hover {
+    color: #34537A;
+    cursor: pointer;
+}
+
+.laptop img {
+    width: 400px;
+    height: 400px;
+}
+
+.right-part {
+    padding-top: 20px;
+    width: 540px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.caption {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.description {
+    width: 500px;
+    margin-bottom: 60px;
+    line-height: 27px; /* Межстрочное расстояние */
+}
+
+.button {
+    width: 225px;
+    height: 65px;
+    background-color: #34547A;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border: none; /* Убираем границы кнопки */
+}
+
+.burger-icon {
+    display: none;
+    margin-top: 5px;
+}
+
+.burger-icon span {
+    display: block;
+    height: 7px;
+    width: 45px;
+    background-color: black;
+}
+
+.burger-icon span:nth-child(2) {
+    margin: 6px 0; /* отступы сверху и снизу в burger-icon (разделение полос) */
+}
+
+
+@media (max-width: 1100px) { /* max-width - ширина может меняться начиная указываемого значения */
+    .description {
+        width: 100%; /* текст не вылезает за рамки конейнера */
+    }
+
+    .right-part {
+        padding-left: 50px; /* сохраняем расстояние от картинки до текста */
+    }
+
+    .laptop {
+        padding-left: 30px; /* расстояние от левого края для изображения */
+    }
+
+@media (max-width: 1000px) {
+    .logo {padding-left: 0px;} /* фиксируем логотип слева */
+    .logo img {width: 170px;} /* уменьшаем ширину изображения */
+    .header-menu {display:none;} /* отключили меню */
+
+    .burger-icon {
+        display: block;
+        height: 2px;
+        width: 24px;
+    }
+
+    .burger-icon span {
+        height: 2px;
+        width: 24px;
+    }
+
+    .section-container {
+        display: block; /* расположение элементов друг под другом (фото-заголовок-текст). Убираем flexbox */
+        padding-top: 0px;
+        padding-bottom: 20px; /* отступ снизу (под кнопкой) */
+    }
+
+    .laptop {
+        text-align:center; /* выравнивание картинки посередине */
+        padding-bottom: 20px; /* расстояние от картинки до заголовка */
+    }
+
+    .right-part {
+        text-align: center; /* выравнивание заголовка и текста по центру */
+        padding-top: 0px;
+        width: 100%;
+
+    }
+
+}
+
+
+/*
+@media (max-width: 760px) {
+
+    .section-container {
+        display: block;
+        padding-top: 40px;
+    }
+}
+*/
