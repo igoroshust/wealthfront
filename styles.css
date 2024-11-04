@@ -71,6 +71,31 @@ nav ul li a:hover {
     width: 540px;
 }
 
+.factoids {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-top: 30px;
+}
+
+.facts {
+    text-align: center;
+    max-width: 800px;
+    color: #230B59;
+    font-weight: 400;
+}
+
+.headline {
+    font-size: 27px;
+    line-height: 31.65px;
+    letter: 0.95px;
+}
+
+.subline {
+    font-size: 12px;
+    line-height: 19.25px;
+}
+
 .section-container {
     display: flex;
     justify-content: space-between;
@@ -128,6 +153,8 @@ nav ul li a:hover {
     .laptop {
         padding-left: 30px; /* расстояние от левого края для изображения */
     }
+
+}
 
 @media (max-width: 1000px) {
     .logo {padding-left: 0px;} /* фиксируем логотип слева */
@@ -201,3 +228,4 @@ nav ul li a:hover {
         padding-top: 20px;
     }
 }
+
