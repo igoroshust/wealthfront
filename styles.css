@@ -76,6 +76,7 @@ nav ul li a:hover {
     justify-content: space-around;
     flex-flow: row wrap;
     padding-top: 30px;
+    gap: 30px;
 }
 
 .facts {
@@ -83,6 +84,7 @@ nav ul li a:hover {
     max-width: 800px;
     color: #230B59;
     font-weight: 400;
+
 }
 
 .headline {
@@ -190,6 +192,10 @@ nav ul li a:hover {
         padding-left: 0;
         width: 100%;
     }
+
+    .facts {
+        flex-basis: calc(100% / 3);
+    }
 }
 
 
@@ -202,6 +208,8 @@ nav ul li a:hover {
     }
 }
 */
+
+
 
 @media (max-width: 500px) {
 
@@ -226,6 +234,10 @@ nav ul li a:hover {
 
     .menu-container {
         padding-top: 20px;
+    }
+
+     .facts {
+        flex-basis: calc(100% / 2);
     }
 }
 
