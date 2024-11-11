@@ -11,16 +11,16 @@
     font-family: 'Roboto-Regular', Helvetica, Arial, sans-serif;
     text-decoration: none; /* убираем подчёркивание у ссылок */
     list-style-type: none; /* Убираем маркеры списка */
+    background: #EEEFF1;
 }
 
-.header, .main-section {
-    background: #EEEFF1;
+.header, .main-section, .content-section {
     max-width: 1920px;
     padding: 0 20px; /* делаем отступы по краям для мобильной версии */
     margin: 0 auto; /* выравнивание */
 }
 
-.fixed-container {
+.fixed-container, fixed-content {
     padding: 0 20px; /* отступы по краям для мобильной версии */
     margin: 0 auto; /* выравнивание */
     max-width: 1240px;
@@ -66,7 +66,12 @@ nav ul li a:hover {
     height: 370px;
 }
 
-.right-part {
+.phone-black img {
+    width: 267px;
+    height: 525px;
+}
+
+.right-part, .left-part {
     padding-top: 20px;
     width: 540px;
 }
@@ -102,6 +107,13 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-top: 60px;
 }
 
 .caption {
@@ -141,6 +153,7 @@ nav ul li a:hover {
 .burger-icon span:nth-child(2) {
     margin: 6px 0; /* отступы сверху и снизу в burger-icon (разделение полос) */
 }
+
 
 
 @media (max-width: 1100px) { /* max-width - ширина может меняться начиная указываемого значения */
