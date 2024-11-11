@@ -71,9 +71,15 @@ nav ul li a:hover {
     height: 525px;
 }
 
-.right-part, .left-part {
+.right-part {
     padding-top: 20px;
     width: 540px;
+}
+
+.left-part {
+    padding-top: 20px;
+    width: 500px;
+    height: 380px;
 }
 
 .factoids {
@@ -112,7 +118,7 @@ nav ul li a:hover {
 .section-content {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 60px;
 }
 
@@ -152,6 +158,11 @@ nav ul li a:hover {
 
 .burger-icon span:nth-child(2) {
     margin: 6px 0; /* отступы сверху и снизу в burger-icon (разделение полос) */
+}
+
+.anchor-learn {
+    padding-left: 35px;
+    color: #230b59;
 }
 
 
@@ -207,22 +218,41 @@ nav ul li a:hover {
     }
 
     .facts {
-        flex-basis: calc(100% / 3);
+        flex-basis: calc(100% / 4);
     }
 }
 
-
-/*
-@media (max-width: 760px) {
-
-    .section-container {
-        display: block;
+@media (max-width: 800px) {
+    .section-content {
+        display: block; /* расположение элементов друг под другом (фото-заголовок-текст). Убираем flexbox */
         padding-top: 40px;
+        padding-bottom: 20px; /* отступ снизу (под кнопкой) */
+    }
+
+    .phone-black {
+        text-align:center; /* выравнивание картинки посередине */
+        padding-top: 20px;
+        padding-bottom: 20px; /* расстояние от картинки до заголовка */
+        padding-left: 0;
+    }
+
+     .left-part {
+        text-align: center; /* выравнивание заголовка и текста по центру */
+        padding-top: 20px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .button-start {
+        margin-top: -40px;
+    }
+
+    .anchor-learn {
+        display: block;
+        padding-left: 0px;
+        padding-top: 20px;
     }
 }
-*/
-
-
 
 @media (max-width: 500px) {
 
@@ -250,7 +280,8 @@ nav ul li a:hover {
     }
 
      .facts {
-        flex-basis: calc(100% / 2);
+        flex-basis: calc(100% / 3);
     }
+
 }
 
