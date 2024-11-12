@@ -20,7 +20,7 @@
     margin: 0 auto; /* выравнивание */
 }
 
-.fixed-container, fixed-content {
+.fixed-container, .fixed-content {
     padding: 0 20px; /* отступы по краям для мобильной версии */
     margin: 0 auto; /* выравнивание */
     max-width: 1240px;
@@ -69,6 +69,8 @@ nav ul li a:hover {
 .phone-black img {
     width: 267px;
     height: 525px;
+    margin-right: 150px;
+    margin-left: 50px;
 }
 
 .right-part {
@@ -118,7 +120,7 @@ nav ul li a:hover {
 .section-content {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 60px;
 }
 
@@ -178,6 +180,13 @@ nav ul li a:hover {
 
     .laptop {
         padding-left: 30px; /* расстояние от левого края для изображения */
+    }
+
+    .phone-black img {
+        width: 267px;
+        height: 525px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
 }
