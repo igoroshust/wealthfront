@@ -73,12 +73,17 @@ nav ul li a:hover {
     margin-left: 50px;
 }
 
+.phone-white img[src="img/white-phone.png"] {
+    width: 300px;
+    height: 600px;
+}
+
 .right-part {
     padding-top: 20px;
     width: 540px;
 }
 
-.left-part {
+.left-part, .right-part2 {
     padding-top: 20px;
     width: 500px;
     height: 380px;
@@ -120,6 +125,13 @@ nav ul li a:hover {
 .section-content {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-top: 60px;
 }
@@ -231,8 +243,8 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 800px) {
-    .section-content {
+@media (max-width: 872px) {
+    .section-content, .second-section {
         display: block; /* расположение элементов друг под другом (фото-заголовок-текст). Убираем flexbox */
         padding-top: 40px;
         padding-bottom: 20px; /* отступ снизу (под кнопкой) */
@@ -245,7 +257,18 @@ nav ul li a:hover {
         padding-left: 0;
     }
 
-     .left-part {
+    .phone-white {
+        text-align:center; /* выравнивание картинки посередине */
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .phone-white img[src="img/white-phone.png"] {
+        width: 267px;
+        height: 525px;
+    }
+
+     .left-part, .right-part2 {
         text-align: center; /* выравнивание заголовка и текста по центру */
         padding-top: 20px;
         padding-left: 0;
@@ -263,13 +286,17 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     .laptop img{
         width: 300px;
         height: 300px;
         padding-left: 0;
         /* padding-bottom: 10px; */
+    }
+
+    .phone-white {
+        padding-top: 50px;
     }
 
     .caption {
@@ -292,5 +319,11 @@ nav ul li a:hover {
         flex-basis: calc(100% / 3);
     }
 
+}
+
+@media (max-width: 350px) {
+    .phone-white {
+        padding-top: 100px;
+    }
 }
 
