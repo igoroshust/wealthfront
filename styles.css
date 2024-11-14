@@ -73,9 +73,10 @@ nav ul li a:hover {
     margin-left: 50px;
 }
 
-.phone-white img[src="img/white-phone.png"] {
-    width: 300px;
-    height: 600px;
+.phone-white img[src="img/visa-phone.png"] {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .right-part {
