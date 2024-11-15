@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 .phone-white img[src="img/visa-phone.png"] {
     max-width: 100%;
-    height: auto;
+    height: 550px;
     object-fit: contain;
 }
 
@@ -237,6 +237,11 @@ nav ul li a:hover {
         padding-top: 0;
         padding-left: 0;
         width: 100%;
+    }
+
+    .right-part2 {
+        padding-left: 50px;
+
     }
 
     .facts {
