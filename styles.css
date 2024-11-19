@@ -123,7 +123,7 @@ nav ul li a:hover {
     padding-top: 40px;
 }
 
-.section-content {
+.section-content, .third-section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -135,6 +135,14 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 60px;
+}
+
+.third-section {
+    background-color: #4840BB;
+}
+
+.left-part-2 {
+    background-color: #4840BB;
 }
 
 .caption {
