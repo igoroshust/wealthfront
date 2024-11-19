@@ -139,9 +139,28 @@ nav ul li a:hover {
 
 .third-section {
     background-color: #4840BB;
+    max-width: 1240px;
+    padding: 0 20px; /* делаем отступы по краям для мобильной версии */
+    margin: 30px auto; /* выравнивание */
 }
 
-.left-part-2 {
+.left-part-2, .caption.caption-2, .description.description-2 {
+    background-color: #4840BB;
+    color: #fff;
+    padding-top: 20px;
+    width: 365px;
+    height: 180px;
+}
+
+.currency-img {
+    height: 500px;
+    background-color: #4840BB;
+}
+
+.currency-img img {
+    width: 600px;
+    height: 500px;
+    padding: 30px;
     background-color: #4840BB;
 }
 
