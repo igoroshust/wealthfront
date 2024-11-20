@@ -18,7 +18,7 @@
     padding: 0 20px; /* отступы по краям для мобильной версии */
     margin: 30px auto; /* выравнивание */
     max-width: 1240px;
-    height: 550px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -41,15 +41,22 @@
 
 .left-part-2 {
     background-color: #4840BB;
-    width: 400px;
+    padding-top: 98px;
+    padding-left: 80px;
+    width: 384px;
     height: 500px;
 }
 
 .caption.caption-2, .description.description-2 {
     background-color: #4840BB;
     color: #fff;
+    height: 210px;
+}
+
+.description.description-2 {
     padding-top: 20px;
 }
+
 
 
 
@@ -296,13 +303,22 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding-top: 70px;
+        padding-top: 0;
         height: 400px;
     }
 
-    .caption.caption-2, .description.description-2 {
+    .caption.caption-2 {
+        margin-top: 100px;
+        padding-top: 50px;
+        width: 600px;
+        text-align: center;
+    }
+
+   .description.description-2 {
         width: 100%;
         text-align: center;
+        font-size: 16px;
+
     }
 
 
@@ -353,27 +369,7 @@ nav ul li a:hover {
         width: 267px;
         height: 525px;
     }
-    .currency-img {
-        height: 300px;
 
-    }
-
-    .borrow {
-        height: 600px;
-    }
-
-    .currency-img img {
-        width: 340px;
-        height: 300px;
-    }
-
-    .left-part-2 {
-        padding-top: 0;
-        height: 100px;
-    }
-
-    .caption.caption-2, .description.description-2 {
-    }
 
      .left-part, .right-part2 {
         text-align: center; /* выравнивание заголовка и текста по центру */
@@ -391,6 +387,48 @@ nav ul li a:hover {
         padding-left: 0px;
         padding-top: 20px;
     }
+}
+
+
+@media (max-width: 680px) {
+
+    .currency-img {
+        height: 300px;
+    }
+
+    .currency-img img {
+        padding-left: 80px;
+        width: 500px;
+        height: 450px;
+    }
+
+    .borrow {
+        height: 750px;
+    }
+
+    .left-part-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 0;
+        height: 200px;
+    }
+
+    .caption.caption-2 {
+        margin-top: 150px;
+        padding-top: 0;
+        width: 500px;
+        text-align: center;
+    }
+
+   .description.description-2 {
+        width: 500px;
+        text-align: center;
+        font-size: 16px;
+
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -426,11 +464,42 @@ nav ul li a:hover {
         flex-basis: calc(100% / 3);
     }
 
+    .currency-img img {
+        padding-left: 20px;
+        width: 340px;
+        height: 340px;
+    }
+
+    .left-part-2 {
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+
+    .caption.caption-2 {
+        margin-top: 0;
+        padding-top: 30px;
+        width: 280px;
+        text-align: center;
+    }
+
+   .description.description-2 {
+        padding-top: 10px;
+        width: 280px;
+        text-align: center;
+        font-size: 16px;
+
+    }
+
 }
 
 @media (max-width: 350px) {
     .phone-white {
         padding-top: 100px;
+    }
+
+        .currency-img img {
+        width: 300px;
+        height: 340px;
     }
 }
 
