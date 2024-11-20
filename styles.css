@@ -14,6 +14,59 @@
     background: #EEEFF1;
 }
 
+.borrow {
+    padding: 0 20px; /* отступы по краям для мобильной версии */
+    margin: 30px auto; /* выравнивание */
+    max-width: 1240px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #4840BB;
+    color: #fff;
+}
+
+
+.currency-img {
+    height: 400px;
+}
+
+.currency-img img {
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    background-color: #4840BB;
+}
+
+.left-part-2 {
+    background-color: #4840BB;
+    width: 400px;
+    height: 500px;
+}
+
+.caption.caption-2, .description.description-2 {
+    background-color: #4840BB;
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header, .main-section, .content-section {
     max-width: 1920px;
     padding: 0 20px; /* делаем отступы по краям для мобильной версии */
@@ -123,7 +176,7 @@ nav ul li a:hover {
     padding-top: 40px;
 }
 
-.section-content, .third-section {
+.section-content {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -137,32 +190,7 @@ nav ul li a:hover {
     padding-top: 60px;
 }
 
-.third-section {
-    background-color: #4840BB;
-    max-width: 1240px;
-    padding: 0 20px; /* делаем отступы по краям для мобильной версии */
-    margin: 30px auto; /* выравнивание */
-}
 
-.left-part-2, .caption.caption-2, .description.description-2 {
-    background-color: #4840BB;
-    color: #fff;
-    padding-top: 20px;
-    width: 365px;
-    height: 180px;
-}
-
-.currency-img {
-    height: 500px;
-    background-color: #4840BB;
-}
-
-.currency-img img {
-    width: 600px;
-    height: 500px;
-    padding: 30px;
-    background-color: #4840BB;
-}
 
 .caption {
     font-size: 44px;
