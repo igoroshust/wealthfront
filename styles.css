@@ -8,11 +8,189 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #EEEFF1;
     font-family: 'Roboto-Regular', Helvetica, Arial, sans-serif;
     text-decoration: none; /* убираем подчёркивание у ссылок */
     list-style-type: none; /* Убираем маркеры списка */
-    background: #EEEFF1;
 }
+
+
+/* -----------------------------------------------HEADER block------------------------------------------------------- */
+.header, .main-section, .content-section {
+    max-width: 1920px;
+    padding: 0 20px; /* делаем отступы по краям для мобильной версии */
+    margin: 0 auto; /* выравнивание */
+}
+
+.fixed-container, .fixed-content {
+    padding: 0 20px; /* отступы по краям для мобильной версии */
+    margin: 0 auto; /* выравнивание */
+    max-width: 1240px;
+}
+
+.menu-container {
+    display: flex; /* горизонтальное расположение меню */
+    padding-top: 67px;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 47px;
+}
+
+.header-menu {
+    padding-top: 6px;
+}
+
+.menu {
+    display: flex;
+}
+
+nav ul li {
+    text-transform: uppercase; /* Пункты меню капсом */
+    font-size: 12px;
+}
+
+nav ul li a {
+    margin-right: 47px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a:hover {
+    color: #34537A;
+    cursor: pointer;
+}
+
+.burger-icon {
+    display: none;
+    margin-top: 5px;
+}
+
+.burger-icon span {
+    display: block;
+    height: 7px;
+    width: 45px;
+    background-color: black;
+}
+
+.burger-icon span:nth-child(2) {
+    margin: 6px 0; /* отступы сверху и снизу в burger-icon (разделение полос) */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* -----------------------------------------------MAIN PAGE block---------------------------------------------------- */
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.laptop img {
+    width: 370px;
+    height: 370px;
+}
+
+.right-part {
+    padding-top: 20px;
+    width: 540px;
+}
+
+.caption {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.description {
+    width: 500px;
+    font-size: 15px;
+    margin-bottom: 60px;
+    line-height: 27px; /* Межстрочное расстояние */
+}
+
+.button {
+    width: 225px;
+    height: 65px;
+    background-color: #34547A;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border: none; /* Убираем границы кнопки */
+}
+
+.factoids {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.facts {
+    text-align: center;
+    max-width: 800px;
+    color: #230B59;
+    font-weight: 400;
+
+}
+
+.headline {
+    font-size: 27px;
+    line-height: 31.65px;
+    letter: 0.95px;
+}
+
+.subline {
+    font-size: 12px;
+    line-height: 19.25px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* ----------------------------------------------- INVEST & CASH block ---------------------------------------------- */
+
+.section-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.phone-black img {
+    width: 267px;
+    height: 525px;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.visaphone {
+    max-width: 100%;
+    height: 550px;
+    object-fit: contain;
+}
+
+.left-part, .right-part2 {
+    padding-top: 20px;
+    width: 500px;
+    height: 380px;
+}
+
+.anchor-learn {
+    padding-left: 35px;
+    color: #230b59;
+}
+
+/* ----------------------------------------------- INVEST & CASH block ---------------------------------------------- */
 
 .borrow {
     padding: 0 20px; /* отступы по краям для мобильной версии */
@@ -25,7 +203,6 @@
     background-color: #4840BB;
     color: #fff;
 }
-
 
 .currency-img {
     height: 400px;
@@ -57,191 +234,8 @@
     padding-top: 20px;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------ */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header, .main-section, .content-section {
-    max-width: 1920px;
-    padding: 0 20px; /* делаем отступы по краям для мобильной версии */
-    margin: 0 auto; /* выравнивание */
-}
-
-.fixed-container, .fixed-content {
-    padding: 0 20px; /* отступы по краям для мобильной версии */
-    margin: 0 auto; /* выравнивание */
-    max-width: 1240px;
-}
-
-.menu-container {
-    display: flex; /* горизонтальное расположение меню */
-    padding-top: 67px;
-    justify-content: space-between;
-}
-
-.logo {
-    padding-left: 47px;
-}
-
-.menu {
-    display: flex;
-}
-
-.header-menu {
-    padding-top: 6px;
-}
-
-nav ul li {
-    text-transform: uppercase; /* Пункты меню капсом */
-    font-size: 12px;
-}
-
-nav ul li a {
-    margin-right: 47px;
-    font-weight: 700;
-    color: #000;
-    letter-spacing: 0.1em;
-}
-
-nav ul li a:hover {
-    color: #34537A;
-    cursor: pointer;
-}
-
-.laptop img {
-    width: 370px;
-    height: 370px;
-}
-
-.phone-black img {
-    width: 267px;
-    height: 525px;
-    margin-right: 150px;
-    margin-left: 50px;
-}
-
-.phone-white img[src="img/visa-phone.png"] {
-    max-width: 100%;
-    height: 550px;
-    object-fit: contain;
-}
-
-.right-part {
-    padding-top: 20px;
-    width: 540px;
-}
-
-.left-part, .right-part2 {
-    padding-top: 20px;
-    width: 500px;
-    height: 380px;
-}
-
-.factoids {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding-top: 30px;
-    gap: 30px;
-}
-
-.facts {
-    text-align: center;
-    max-width: 800px;
-    color: #230B59;
-    font-weight: 400;
-
-}
-
-.headline {
-    font-size: 27px;
-    line-height: 31.65px;
-    letter: 0.95px;
-}
-
-.subline {
-    font-size: 12px;
-    line-height: 19.25px;
-}
-
-.section-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-
-.section-content {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding-top: 60px;
-}
-
-.second-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 60px;
-}
-
-
-
-.caption {
-    font-size: 44px;
-    margin-bottom: 30px;
-}
-
-.description {
-    width: 500px;
-    font-size: 15px;
-    margin-bottom: 60px;
-    line-height: 27px; /* Межстрочное расстояние */
-}
-
-.button {
-    width: 225px;
-    height: 65px;
-    background-color: #34547A;
-    color: #fff;
-    font-size: 12px;
-    cursor: pointer;
-    border: none; /* Убираем границы кнопки */
-}
-
-.burger-icon {
-    display: none;
-    margin-top: 5px;
-}
-
-.burger-icon span {
-    display: block;
-    height: 7px;
-    width: 45px;
-    background-color: black;
-}
-
-.burger-icon span:nth-child(2) {
-    margin: 6px 0; /* отступы сверху и снизу в burger-icon (разделение полос) */
-}
-
-.anchor-learn {
-    padding-left: 35px;
-    color: #230b59;
-}
 
 
 
@@ -365,7 +359,7 @@ nav ul li a:hover {
         padding-left: 0;
     }
 
-    .phone-white img[src="img/white-phone.png"] {
+    .visaphone {
         width: 267px;
         height: 525px;
     }
