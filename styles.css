@@ -14,7 +14,7 @@
     list-style-type: none; /* Убираем маркеры списка */
 }
 
-
+/* ------------------------------------------------------------------------------------------------------------------ */
 /* -----------------------------------------------HEADER block------------------------------------------------------- */
 .header, .main-section, .content-section {
     max-width: 1920px;
@@ -80,7 +80,6 @@ nav ul li a:hover {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-
 /* -----------------------------------------------MAIN PAGE block---------------------------------------------------- */
 
 .section-container {
@@ -149,7 +148,6 @@ nav ul li a:hover {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-
 /* ----------------------------------------------- INVEST & CASH block ---------------------------------------------- */
 
 .section-content {
@@ -190,13 +188,14 @@ nav ul li a:hover {
     color: #230b59;
 }
 
-/* ----------------------------------------------- INVEST & CASH block ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------- Borrow Block ----------------------------------------------------- */
 
 .borrow {
     padding: 0 20px; /* отступы по краям для мобильной версии */
     margin: 30px auto; /* выравнивание */
-    max-width: 1240px;
-    height: 600px;
+    max-width: 1500px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -218,7 +217,7 @@ nav ul li a:hover {
 
 .left-part-2 {
     background-color: #4840BB;
-    padding-top: 98px;
+    padding-top: 90px;
     padding-left: 80px;
     width: 384px;
     height: 500px;
@@ -227,38 +226,28 @@ nav ul li a:hover {
 .caption.caption-2, .description.description-2 {
     background-color: #4840BB;
     color: #fff;
-    height: 210px;
-}
-
-.description.description-2 {
-    padding-top: 20px;
+    width: 320px;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
+/* -----------------------------------------MEDIA QUERIES ----------------------------------------------------------- */
 
-
-
-
-@media (max-width: 1100px) { /* max-width - ширина может меняться начиная указываемого значения */
+@media (max-width: 1100px) {
     .description {
         width: 100%; /* текст не вылезает за рамки конейнера */
     }
-
     .right-part {
         padding-left: 50px; /* сохраняем расстояние от картинки до текста */
     }
-
     .laptop {
         padding-left: 30px; /* расстояние от левого края для изображения */
     }
-
     .phone-black img {
         width: 267px;
         height: 525px;
         margin-right: 0;
         margin-left: 0;
     }
-
 }
 
 @media (max-width: 1000px) {
@@ -271,19 +260,33 @@ nav ul li a:hover {
         height: 2px;
         width: 24px;
     }
-
     .burger-icon span {
         height: 2px;
         width: 24px;
     }
-
     .section-container {
         display: block; /* расположение элементов друг под другом (фото-заголовок-текст). Убираем flexbox */
         padding-top: 0px;
         padding-bottom: 20px; /* отступ снизу (под кнопкой) */
     }
-
-    .borrow {
+    .laptop {
+        text-align:center; /* выравнивание картинки посередине */
+        padding-bottom: 20px; /* расстояние от картинки до заголовка */
+        padding-left: 0;
+    }
+    .right-part {
+        text-align: center; /* выравнивание заголовка и текста по центру */
+        padding-top: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+    .right-part2 {
+        padding-left: 50px;
+    }
+    .facts {
+        flex-basis: calc(100% / 4);
+    }
+     .borrow {
         display: block;
         margin-top: 80px;
         padding-top: 0px;
@@ -291,7 +294,6 @@ nav ul li a:hover {
         text-align: center;
         height: 800px;
     }
-
     .left-part-2 {
         display: flex;
         flex-direction: column;
@@ -300,42 +302,16 @@ nav ul li a:hover {
         padding-top: 0;
         height: 400px;
     }
-
     .caption.caption-2 {
         margin-top: 100px;
         padding-top: 50px;
         width: 600px;
         text-align: center;
     }
-
    .description.description-2 {
         width: 100%;
         text-align: center;
         font-size: 16px;
-
-    }
-
-
-    .laptop {
-        text-align:center; /* выравнивание картинки посередине */
-        padding-bottom: 20px; /* расстояние от картинки до заголовка */
-        padding-left: 0;
-    }
-
-    .right-part {
-        text-align: center; /* выравнивание заголовка и текста по центру */
-        padding-top: 0;
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .right-part2 {
-        padding-left: 50px;
-
-    }
-
-    .facts {
-        flex-basis: calc(100% / 4);
     }
 }
 
@@ -345,14 +321,12 @@ nav ul li a:hover {
         padding-top: 40px;
         padding-bottom: 20px; /* отступ снизу (под кнопкой) */
     }
-
     .phone-black {
         text-align:center; /* выравнивание картинки посередине */
         padding-top: 20px;
         padding-bottom: 20px; /* расстояние от картинки до заголовка */
         padding-left: 0;
     }
-
     .phone-white {
         text-align:center; /* выравнивание картинки посередине */
         padding-top: 0;
@@ -363,19 +337,15 @@ nav ul li a:hover {
         width: 267px;
         height: 525px;
     }
-
-
-     .left-part, .right-part2 {
+    .left-part, .right-part2 {
         text-align: center; /* выравнивание заголовка и текста по центру */
         padding-top: 20px;
         padding-left: 0;
         width: 100%;
     }
-
     .button-start {
         margin-top: -40px;
     }
-
     .anchor-learn {
         display: block;
         padding-left: 0px;
@@ -385,21 +355,17 @@ nav ul li a:hover {
 
 
 @media (max-width: 680px) {
-
     .currency-img {
         height: 300px;
     }
-
     .currency-img img {
         padding-left: 80px;
         width: 500px;
         height: 450px;
     }
-
     .borrow {
         height: 750px;
     }
-
     .left-part-2 {
         display: flex;
         flex-direction: column;
@@ -408,90 +374,72 @@ nav ul li a:hover {
         padding-top: 0;
         height: 200px;
     }
-
     .caption.caption-2 {
         margin-top: 150px;
         padding-top: 0;
         width: 500px;
         text-align: center;
     }
-
    .description.description-2 {
         width: 500px;
         text-align: center;
         font-size: 16px;
-
     }
-
 }
 
 @media (max-width: 550px) {
-
     .laptop img{
         width: 300px;
         height: 300px;
         padding-left: 0;
         /* padding-bottom: 10px; */
     }
-
     .phone-white {
         padding-top: 50px;
     }
-
     .caption {
         font-size: 30px;
     }
-
     .description {
         font-size: 15px;
     }
-
     .section-container {
         padding-top: 0px;
     }
-
     .menu-container {
         padding-top: 20px;
     }
-
-     .facts {
+    .facts {
         flex-basis: calc(100% / 3);
     }
-
     .currency-img img {
         padding-left: 20px;
         width: 340px;
         height: 340px;
     }
-
     .left-part-2 {
         padding: 20px 0;
         margin: 0 auto;
     }
-
     .caption.caption-2 {
         margin-top: 0;
         padding-top: 30px;
         width: 280px;
         text-align: center;
     }
-
    .description.description-2 {
         padding-top: 10px;
         width: 280px;
         text-align: center;
         font-size: 16px;
-
     }
-
 }
 
 @media (max-width: 350px) {
     .phone-white {
         padding-top: 100px;
     }
-
-        .currency-img img {
+    .currency-img img {
         width: 300px;
         height: 340px;
     }
