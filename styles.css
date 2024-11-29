@@ -193,7 +193,7 @@ nav ul li a:hover {
 
 .borrow {
     padding: 0 20px; /* отступы по краям для мобильной версии */
-    margin: 30px auto; /* выравнивание */
+    margin: 0 auto; /* выравнивание */
     max-width: 1500px;
     height: 500px;
     display: flex;
@@ -227,6 +227,50 @@ nav ul li a:hover {
     background-color: #4840BB;
     color: #fff;
     width: 320px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------- FOOTER ----------------------------------------------------------------- */
+
+.footer {
+    padding: 5px 30px 15px 20px; /* отступы по краям для мобильной версии */
+    margin: 0 auto; /* выравнивание */
+    background: #20142c;
+    max-width: 1500px;
+}
+
+.footer-logo {
+    width: 205px;
+    background: #20142c;
+}
+
+.footer-logo img {
+    background: #20142c;
+}
+
+.fixed-container.footer {
+    background: #20142c;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    background: #20142c;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 488px;
+    flex-flow: row wrap;
+    gap: 45px;
+    background: #20142c;
+}
+
+.footer-links a {
+    background: #20142c;
+    color: #fff;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
@@ -313,7 +357,26 @@ nav ul li a:hover {
         text-align: center;
         font-size: 16px;
     }
+     .sub-section {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 20px; /* отступ снизу (под кнопкой) */
+    }
+    .footer-logo {
+        text-align:center; /* выравнивание картинки посередине */
+        padding-top: 10px;
+        padding-bottom: 20px; /* расстояние от картинки до заголовка */
+        padding-left: 0;
+        width: 100%;
+    }
+    .footer-links {
+        text-align: center; /* выравнивание заголовка и текста по центру */
+        padding-top: 20px;
+        padding-left: 0;
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 872px) {
     .section-content, .second-section {
